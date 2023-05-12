@@ -5,13 +5,18 @@
 
 int main() 
 {
-
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
-     char ch;
+    char ch;
     char s[24];
-    char sen[100];
-    scanf("%c\n%s\n%[^\n]s",&ch,s,sen);
-    printf("%c\n%s\n%s",ch,s,sen);   
+    char t[100];
+    
+    scanf("%c", &ch);
+    scanf("%s", s);
+    getchar();
+    scanf("%[^\n]%*c", t);
+    
+    printf("%c\n", ch);
+    printf("%s\n", s);
+    printf("%s\n", t);
+     
     return 0;
 }
-
