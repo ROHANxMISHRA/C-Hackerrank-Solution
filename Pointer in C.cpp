@@ -1,14 +1,11 @@
 #include <stdio.h>
-
 void update(int *a,int *b) {
-    // Complete this function 
-    
-
-    int sum = *a + *b;
-    int absolute_diff = abs(*a - *b);
-    *a = sum;
-    *b = absolute_diff;
-
+    // Complete this function    
+     int sum,diff;
+     sum = *a+*b;
+     diff = abs(*a-*b);
+     *a = sum;
+     *b = diff;
 }
 
 int main() {
@@ -18,6 +15,7 @@ int main() {
     scanf("%d %d", &a, &b);
     update(pa, pb);
     printf("%d\n%d", a, b);
+
 
     return 0;
 }
