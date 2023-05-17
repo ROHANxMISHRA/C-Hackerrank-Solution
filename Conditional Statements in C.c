@@ -10,46 +10,8 @@
 
 char* readline();
 
-if(n>= 1 && n <= 9) {
-  switch (n) {
-    case 1:
-      console.log("one");
-      break;
-    case 2:
-      console.log("two");
-      break;
-    case 3:
-      console.log("three");
-      break;
-    case 4:
-      console.log("four");
-      break;
-    case 5:
-      console.log("five");
-      break;
-    case 6:
-      console.log("six");
-      break;
-    case 7:
-      console.log("seven");
-      break;
-    case 8:
-      console.log("eight");
-      break;
-    case 9:
-      console.log("nine");
-      break;
-    default:
-      console.log("Input is not valid");
-  }
-} else {
-  console.log("Greater than 9");
-}
-}
-
 int main()
 {
-    
     char* n_endptr;
     char* n_str = readline();
     int n = strtol(n_str, &n_endptr, 10);
@@ -57,6 +19,28 @@ int main()
     if (n_endptr == n_str || *n_endptr != '\0') { exit(EXIT_FAILURE); }
 
     // Write Your Code Here
+    if(n>=1 && n<=9)
+    {   if(n==1)
+        printf("one");
+        if(n==2)
+        printf("two");
+        if(n==3)
+        printf("three");
+        if(n==4)
+        printf("four");
+        if(n==5)
+        printf("five");
+        if(n==6)
+        printf("six");
+        if(n==7)
+        printf("seven");
+        if(n==8)
+        printf("eight");
+        if(n==9)
+        printf("nine");
+    }
+    else
+        printf("Greater than 9");
 
     return 0;
 }
@@ -65,7 +49,6 @@ char* readline() {
     size_t alloc_length = 1024;
     size_t data_length = 0;
     char* data = malloc(alloc_length);
-    
 
     while (true) {
         char* cursor = data + data_length;
@@ -93,4 +76,3 @@ char* readline() {
 
     return data;
 }
-
