@@ -14,6 +14,6 @@ float fsum = c+d;
 float fdiff = c-d;
 printf("%d %d\n%0.1f %0.1f",sum, diff, fsum, fdiff);
     
-    return 0;
+ return 0;
 }
 
