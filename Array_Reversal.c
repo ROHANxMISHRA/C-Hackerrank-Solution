@@ -17,8 +17,7 @@ int main()
         arr[a]=arr[b];
         arr[b]=temp;
     }
-
     for(i = 0; i < num; i++)
-        printf("%d ", *(arr + i));
+    printf("%d ", *(arr + i));
     return 0;
 }
