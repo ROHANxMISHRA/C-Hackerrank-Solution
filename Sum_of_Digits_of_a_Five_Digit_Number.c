@@ -10,7 +10,5 @@ int main() {
         n = temp/10;
     }
     printf("%d",sum);
-
-
     return 0;
 }
