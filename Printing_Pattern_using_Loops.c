@@ -17,6 +17,7 @@ int main()
             min = i < j ? i : j;
             printf("%d",n-min+1);
         }
+
         
         printf("\n");
     }
