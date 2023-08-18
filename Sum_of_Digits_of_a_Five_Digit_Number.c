@@ -9,6 +9,7 @@ int main() {
         sum = sum + n;
         n = temp/10;
     }
+	
     printf("%d",sum);
     return 0;
 }
